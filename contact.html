@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Massage Association</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="x-icon" href="Images/Logo2.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="con-header">
+        <nav>
+            <a href="index.html"><img src="images/Logo2.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="professional.html">PROFESSIONAL</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+    <!------- contact us content ------->
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Shlomo HaMelekh 44</h5>
+                        <p>Netanya, Israel, IL</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+972 53-863-2235</h5>
+                        <p>Sunday to Thursday, 10AM to 7PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <span>
+                        <h5>alexgerzhin@gmail.com</h5>
+                        <p>Contact us by Email</p>
+                    </span>
+                </div>
+            </div>
+            <div class="block">
+                <div class="contact-col-box">
+                    <form method="POST" action="send_email.php" class="input-color">
+                        <input class="name" type="text" name="name" placeholder="Enter your name" required>
+                        <input class="email" type="email" name="email" placeholder="Enter email address" required>
+                        <input class="phone" type="phone" name="phone" placeholder="Enter phone number" required>
+                        <textarea class="msg" name="message" cols="5" rows="8" placeholder="Leave a message" required></textarea>
+                        <button type="submit" class="hero-btn6">Send Message</button>
+                    </form>                                                     
+                </div>
+                
+        </div>
+    </div>
+
+    </section>
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1919.4180024959878!2d34.855975751148044!3d32.33919055607319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d6ab1aeb0b7d1%3A0x4cbc66eea7623fca!2z16nXnNee15Qg15TXntec15ogNDQsINeg16rXoNeZ15Q!5e0!3m2!1siw!2sil!4v1674049997803!5m2!1siw!2sil" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Body Balance is a professional massage association providing high-quality services <br> for pain relief, relaxation, and overall. Our expert therapists offer a range <br> of massage techniques for all needs</p>
+        <div class="icons">
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" class="hero-btn5"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter" class="hero-btn5"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook" class="hero-btn5"></i></a>
+        </div>
+        <p>Made In Co-Op With Massage Association</p>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+    
+</body>
+</html>
